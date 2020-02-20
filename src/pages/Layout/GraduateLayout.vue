@@ -6,19 +6,15 @@
     <side-bar>                                      <!--右侧导航栏-->
      <mobile-menu slot="content"></mobile-menu>    <!--用MobliMenu补充sidebar中预留的<sllot name="content"></slot>-->
 
-      <sidebar-link to="/userProfile"><!--路由-->
+      <sidebar-link to="/graduate/user"><!--路由-->
         <md-icon>person</md-icon><!--选项图标-->
-        <p>User Profile</p>
+        <p>研究生个人信息</p>
       </sidebar-link>
-      <sidebar-link to="/table">
+      <sidebar-link to="/graduate/table">
         <md-icon>content_paste</md-icon>
-        <p>Table list</p>
+        <p>设备信息</p>
       </sidebar-link>
 
-      <sidebar-link to="/message">
-        <md-icon>notifications</md-icon>
-        <p>Message</p>
-      </sidebar-link>
     </side-bar>
 
     <div class="main-panel">

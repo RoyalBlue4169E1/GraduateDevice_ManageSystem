@@ -8,17 +8,13 @@
 
       <sidebar-link to="/userProfile"><!--路由-->
         <md-icon>person</md-icon><!--选项图标-->
-        <p>User Profile</p>
+        <p>实验室管理员个人信息</p>
       </sidebar-link>
       <sidebar-link to="/table">
         <md-icon>content_paste</md-icon>
-        <p>Table list</p>
+        <p>设备信息</p>
       </sidebar-link>
 
-      <sidebar-link to="/message">
-        <md-icon>notifications</md-icon>
-        <p>Message</p>
-      </sidebar-link>
     </side-bar>
 
     <div class="main-panel">

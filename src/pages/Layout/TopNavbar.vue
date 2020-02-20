@@ -50,7 +50,7 @@
               </a>
             </li>
 
-            <md-list-item href="#/user">                           <!--第三个图标 路由转到user-->
+            <md-list-item href="#/userProfile">                           <!--第三个图标 路由转到user-->
               <i class="material-icons">person</i>
               <p class="hidden-lg hidden-md">Profile</p>
             </md-list-item>
