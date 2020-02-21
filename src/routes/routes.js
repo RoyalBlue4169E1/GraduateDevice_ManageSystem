@@ -1,42 +1,45 @@
-import GraduateLayout from "@/pages/Layout/GraduateLayout.vue";
-import TutorLayout from "@/pages/Layout/TutorLayout.vue";
-import LabManagerLayout from '@/pages/Layout/LabManagerLayout';
-import CollageManagerLayout from '@/pages/Layout/CollageManagerLayout.vue';
+import DashboardLayout from "@/pages/Layout/DashboardLayout.vue"
 import Login from '@/pages/Layout/Login.vue';
 
 import UserProfile from "@/pages/UserProfile.vue";
-import TableList from "@/pages/TableList.vue";
-
-
+import DeviceManage from "@/pages/DeviceManage.vue";
+import UserManage from "@/pages/UserManage.vue";
+import HoldingDeviceProfile from '@/pages/HoldingDeviceProfile.vue';
 import Message from "@/pages/Message.vue";
 import VueRouter from "vue-router";
 
 const routes = [
   {
     path: "/",
-    redirect: "/graduate",
-  },
-  {
-    path:"/graduate",
-    name:"graduate",
-    component: GraduateLayout,
-    redirect:"/graduate/user",
-    children: [
+    component:DashboardLayout,
+    redirect: "/user",
+    children:[
       {
-        path: "/graduate/user",
+        path: "user",
         name: "User Profile",
         component: UserProfile
       },
       {
-        path: "/graduate/table",
-        name: "Table List",
-        component: TableList
-      },
-      {
-        path:"/graduate/message",
+        path:"message",
         name:"Message",
         component:Message
+      },
+      {
+        path:"deviceManage",
+        name:"Device Manage",
+        component:DeviceManage
+      },
+      {
+        path:"userManage",
+        name:"User Manage",
+        component:UserManage
+      },
+      {
+        path:"holdingDeviceProfile",
+        name:"HoldingDevice Profile",
+        component:HoldingDeviceProfile
       }
+
     ]
   },
   {

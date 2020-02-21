@@ -48,14 +48,14 @@ Vue.use(GlobalDirectives);
 Vue.use(Notifications);
                                       //导航首位死循环问题 next('/login')相当于跳转，会再通过导航守卫
                                       //如果没有 if(to.path==="/login") next()  跳出循环 就会形成死循环
-router.beforeEach((to,from,next)=>
-{
-  if(to.path==="/login") next();
-  else{
-    if(to.path==="/graduate/user") next('/login')
-  }
+// router.beforeEach((to,from,next)=>
+// {
+//   if(to.path==="/login") next();
+//   else{
+//     if(to.path==="/graduate/user") next('/login')
+//   }
 
-})
+// })
 
 
 /* eslint-disable no-new */
@@ -65,13 +65,9 @@ new Vue({
   router,
   data: {
     Chartist: Chartist,
-    user:{
-      name:"李华",
-      id:"2018000000",
-      identity:""
-
-    }
+    
   }
 });
+
 
 
